@@ -1,0 +1,13 @@
+
+.BuyButton {
+    margin: 20px;
+    border: 2px solid #202020;
+    padding: 10px;
+    background-color: #b8ac0c;
+    box-shadow: 3px 5px 8px #1d1002;
+    width: 30%;
+    max-width: 300px;
+    align-items: center;
+    cursor: pointer;
+    
+  }

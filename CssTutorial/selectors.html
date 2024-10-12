@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors Tutorial</title>
+    <style>
+        body {
+            background-color: #414141;
+        }
+        #myId {
+            color: rgb(235, 84, 84);
+        }
+        .headclass {
+            color: aquamarine;
+        }
+
+        a{
+            color: #eb9b08;
+        }
+    
+        /* To target Diff "a" tags */
+        /* a[target="_blank"] {
+            padding: 10px;
+            background-color: #e4c205;
+            border: solid 2px;
+        } */
+        /* a[href="https://www.google.com"] {
+            color: #07c5bc;
+        } */
+    
+        /* This will select all "a" tags */
+        /* a {
+            padding: 10px;
+            background-color: #e4c205;
+            border: solid 2px;
+        } */
+    
+        /* This will select all "a" having a target */
+        /* a[target] {
+            padding: 10px;
+            background-color: #e4c205;
+            border: solid 2px;
+        } */
+        
+        /* Selecting multiple at once  */
+        /* h1,h2,h3 {
+            background-color: #fff;
+        } */
+
+        /* To select all li  */
+        /* li {
+            background-color: #680072;
+        } */
+        /* To select all li inside ul  */
+        ul li {
+            background-color: #44e206;
+        }
+    
+        
+    
+        /* To select only child (not grandchild etc) */
+        p > a {
+            background-color: #01f7ff;
+            border: solid 2px;
+        }
+        header > a {
+            color: #44e206;
+        }
+    
+        /* To select siblings(Notice only one "a" and span are selected which are siblings) */
+        a + span {
+            margin: 5px;
+            border: solid 3px;
+            background-color: #fff !important;
+        }
+        
+    
+    </style>
+</head>
+
+<body>
+    <h1 class="headclass">Lorem ipsum dolor sit amet.</h1>
+
+    <!-- Id has higher priority than class -->
+    <h2 class="headclass" id="myId">Lorem ipsum, dolor sit amet consectetur adipisicing.</h2>
+
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <a href="https://www.youtube.com" target="_parent">Youtube</a>
+    <br />
+    <br />
+    <a href="https://www.youtube.com" >Youtube Dusra</a>
+
+    <ul>
+        <li>Click</li>
+        <li>Press</li>
+        <li>Touch</li>
+    </ul>
+
+    <li>Outside Ul</li>
+
+    <p>
+        <a href="https://www.google.com">Google Beta</a>
+        <span>Hello my friend</span>
+        <header>
+            <a href="https://www.google.com">Google Pota</a>
+            
+        </header>
+    </p>
+    <span>Hello out of paragraph</span>
+</body>
+</html>

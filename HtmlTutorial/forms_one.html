@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body{
+            background-color: #414141;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Forms in html</h1>
+
+    <!-- All data inside a form is submitted together  -->
+     <!-- action attribute determines where to submit the data, it could have a url, or location(./forms.php) etc  -->
+      <!-- method attribute sends data in get(not encrypted, clear text format eg google search page) or post(encryped) form , mostly we use encryped form -->
+    <form action="" method="POST" accept-charset="utf-16" autocomplete="off" autocapitalize="" enctype="multipart/form-data" target="_blank" value="Rogers">
+        <label for="fname">First Name</label>
+        <input type="text" name="" placeholder="First Name" id="fname">
+        <!-- label vs placeholder : 
+         placeholders can be used to show users what to fill but can't be read by google or yahoo etc so it's best practise to use labels ESPECIALLY IN GOV PROJECTS -->
+        <!-- LABEL : "for" attribute is used to denote which label is for which input, we enter input id there and then if we click the label it'll highlight the input field  -->
+         <!-- then to send/submit the info we use button, its good practise to define button type -->
+        
+        <!-- FORM : "enctype" is encryption type, text/plain means no img can be entered, multipart/form-data means we expect img as well  -->
+        <!-- INPUT : "value" provides a default value  -->
+
+
+
+          <button type="submit">Add</button>
+          <!-- The button wont work now as we dont have a place to store the data  -->
+
+    </form>
+</body>
+</html>

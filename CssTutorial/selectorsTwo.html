@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors Tutorial Two</title>
+    <style>
+        body {
+            background-color: #382323;
+        }
+        button{
+            padding: 5px;
+            background-color: #76dd7b;
+        }
+
+        /* To style when an action is performed  */
+        h1:hover{
+            color: aqua;
+            /* font-style: italic; */
+        }
+        button:hover{
+            padding: 10px;
+            background-color: #08eb14;
+            box-shadow: #000;
+        }
+        
+        /* Diff kinds of selection for div */
+        div:first-child{
+            display: inline;
+            background-color: #05745c;
+            padding: 2px;
+            border: solid 2px;
+        }
+        div:nth-child(2n+2){
+            background-color: #a90db8;
+        }
+
+        /* Adding after or before */
+        h1::before{
+            content: "Pehle ka";
+            background-color: #a52222;
+        }
+        h2::after{
+            content: "Baad ka";
+            background-color: #b1ae12;
+        }
+        p::first-letter{
+            background-color: #129c95;
+            font-size: 60px;
+            padding: 10px;
+        }
+
+        /*
+         CSS grid or flexbox is VIP, read here Grid : https://css-tricks.com/snippets/css/complete-guide-grid/  
+        
+        Flexbox : https://css-tricks.com/snippets/css/a-guide-to-flexbox/ 
+        */
+
+    </style>
+</head>
+<body>
+    <h1>Open</h1>
+    <h2> h2 hai ye </h2>
+    <h2> dusra h2 </h2>
+    <button>Launch</button>
+    <div class="parent">
+        Parent
+        <div class="child">
+            Child1
+        </div>
+        <div class="child">
+            Child
+            <a href="#">Grandchild 1</a>
+            <span class="grandchild">Grandchild 2</span>
+            <a href="#">Grandchild 3</a>
+        </div>
+        <div class="child">
+            Child
+            <span class="grandchild">Grandchild 4</span>
+            <a href="#">Grandchild 5</a>
+        </div>
+        <div class="child">
+            New Child
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+</body>
+</html>

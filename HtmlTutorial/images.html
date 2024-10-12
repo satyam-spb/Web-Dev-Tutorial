@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>images</title>
+</head>
+<body>
+    <img src="https://images.pexels.com/photos/27008964/pexels-photo-27008964/free-photo-of-a-tree-is-sitting-on-the-shore-of-a-lake.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="NO img" width="300px"> 
+
+
+    <!-- Picture tag is used to load diff img acc to screen size, eg :  -->
+    <picture>
+        <!-- So here 1st img will load for 650px & above, 2nd for 550px and above and if both doesn't load then last image with "img" tag is used  -->
+
+        <source media="(min-width: 650px)" srcset="https://images.pexels.com/photos/27302823/pexels-photo-27302823/free-photo-of-blueberries-on-and-near-plate.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" width="300px" />
+
+        <source media="(min-width: 550px)" srcset="https://images.pexels.com/photos/27402086/pexels-photo-27402086/free-photo-of-a-large-fish-swimming-in-the-water.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" width="300px" />
+
+        <img src="https://images.pexels.com/photos/27531362/pexels-photo-27531362/free-photo-of-sunflower-in-the-garden.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="no img" width="300px">
+
+        
+
+    </picture>
+
+
+    <!-- Image map : On all "Google" in img  -->
+    <img src="./EgImg.png" usemap="#image-map">
+
+    <map name="image-map">
+        <area onclick="msg()" target="" alt="" title="" href="" coords="10,220,79,266" shape="rect">
+        <area onclick="msg()" target="" alt="" title="" href="" coords="8,397,100,460" shape="rect">
+    </map>
+
+    <script>
+        function msg(){
+            alert("You clicked on Google")
+        }
+    </script>
+</body>
+</html>

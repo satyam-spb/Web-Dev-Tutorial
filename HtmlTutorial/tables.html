@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        body{
+            background-color: #919191;
+        }
+        table{
+            border-collapse: collapse;
+            text-align: center;
+            width: 80%;
+            color: #fff;
+            background-color: #353535;
+        }
+        td,th{
+            padding: 5px;
+            border: 1px solid black;
+        }
+        tr:nth-child(odd){
+            background-color: #c29f06;
+        }
+    </style>
+</head>
+<body>
+    <!-- Table with heading on top  -->
+    <table>
+        <colgroup>
+            <col span="2" style="background-color: #344d4d;" />
+        </colgroup>
+        <tfoot></tfoot>
+        <tr>
+            <th>Sl NO</th>
+            <th>Name</th>
+            <th>USN</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>sat</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>sam</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>sau</td>
+            <td>26</td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <!-- Table with heading on left  -->  
+     <table>
+        <tr>
+            <th colspan="2">IND</th>
+            <td>20</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <th>USA</th>
+            <td>10</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <th>JPN</th>
+            <td>20</td>
+            <td>40</td>
+        </tr>
+     </table>  
+
+     <!-- ORDered list  -->
+      <ol type="i">
+        <li>la</li>
+        <li>lala</li>
+        <li>lalala</li>
+      </ol>
+
+      <!-- Data List  -->
+       <dl>
+            <!-- Data title  -->
+            <dt>
+                Cars
+            </dt>
+            <!-- data description  -->
+            <dd>
+                Lambo is fast
+            </dd>
+       </dl>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body{
+            background-color: #414141;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Forms in html 2</h1>
+
+    <form action="" method="POST" accept-charset="utf-16" autocomplete="off" autocapitalize="" enctype="multipart/form-data" target="_blank" >
+        <label for="fname">First Name</label>
+        <input type="text" name="" placeholder="First Name" id="fname" value="Rogers">
+
+        <!-- To reset value to default value  -->
+        <input type="reset" value="reset kr le">
+        <select name="Superheros" id="" >
+            <option value="Iron man">Iron man</option>
+            <option value="Cap America">Cap America</option>
+            <option value="Hulk">Hulk</option>
+            <option value="Thor">Thor</option>
+        </select>
+
+        <!-- input list is rarely used cuz the above one is simpler  -->
+        <input list="Superheros" name="superhero">
+        <datalist id="heros">
+            <option value="Iron man">Iron man</option>
+            <option value="Cap America">Cap America</option>
+            <option value="Hulk">Hulk</option>
+            <option value="Thor">Thor</option>
+        </datalist>
+
+        <!-- hidden input is used when we don't want users to see input eg injecting something using django in webpg  -->
+        <input type="hidden" name="">
+
+        <br />
+        <label for="HeroPower">Hero Power</label>
+        <input type="range" name="HeroPower" id="HeroPower" min="0" max="10" value="5" step="0.5">
+
+
+          <button type="submit">Add</button>
+
+    </form>
+</body>
+</html>
